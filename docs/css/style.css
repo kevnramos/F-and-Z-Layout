@@ -3,6 +3,11 @@
     grid-template-columns: [col] auto;
     grid-template-rows: [row] 100px [row] minmax(100px, 593px) [row] auto [row] 50px;
 }
+.wrapper1 {
+    display: grid;
+    grid-template-columns: 25% 75%;
+
+}
 
 .branding {
     grid-column: 1;
@@ -16,6 +21,7 @@
 
 .branding, .mainMenu {
     grid-row: 1;
+    color: black;
 }
 
 .heroImage {
@@ -58,9 +64,9 @@
     border-radius: 5px;
     padding: 10px;
     min-height: auto;
-    background-color: aliceblue;
     background-image: url("../assets/images/ocean.jpg");
-
+    text-align: center;
+    color: #eeeeee;
 }
 
 .footer {
@@ -68,6 +74,7 @@
     grid-column: 1 / span 2;
     text-align: center;
     line-height: 50px;
+
 }
 
 .wrapper > div {
@@ -104,17 +111,3 @@ menu {
 
 }
 
-.box1 {
-    text-align: center;
-    color: #eeeeee;
-}
-
-.box2 {
-    text-align: center;
-    color: #eeeeee;
-}
-
-.box3 {
-    text-align: center;
-    color: #eeeeee;
-}
