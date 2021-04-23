@@ -3,11 +3,6 @@
     grid-template-columns: [col] auto;
     grid-template-rows: [row] 100px [row] minmax(100px, 593px) [row] auto [row] 50px;
 }
-.wrapper1 {
-    display: grid;
-    grid-template-columns: 25% 75%;
-
-}
 
 .branding {
     grid-column: 1;
@@ -21,7 +16,6 @@
 
 .branding, .mainMenu {
     grid-row: 1;
-    color: black;
 }
 
 .heroImage {
@@ -56,6 +50,8 @@
     grid-auto-rows: minmax(100px, auto);
     grid-gap: 3rem;
     grid-column: 1 / span 2;
+    text-align: center;
+    color: white;
 
 }
 
@@ -64,9 +60,9 @@
     border-radius: 5px;
     padding: 10px;
     min-height: auto;
+    background-color: aliceblue;
     background-image: url("../assets/images/ocean.jpg");
-    text-align: center;
-    color: #eeeeee;
+
 }
 
 .footer {
@@ -74,16 +70,9 @@
     grid-column: 1 / span 2;
     text-align: center;
     line-height: 50px;
-
 }
 
-.wrapper > div {
-    background-color: #eeeeee;
-}
 
-.wrapper > div:nth-child(odd) {
-    background-color: #dddddd;
-}
 
 menu {
     margin: 0px;
@@ -92,10 +81,21 @@ menu {
 
 .mainMenu li {
     display: inline;
+
 }
 
 .mainMenu menu a {
-    color: red;
+    display: inline;
+
+    background-color: red;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 .mainMenu ul {
@@ -110,4 +110,12 @@ menu {
     margin-left: 0rem;
 
 }
+.wrapper2{
+
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: [row] 100px [row] auto [row] auto [row] auto [row] 50px;
+
+}
+
 
